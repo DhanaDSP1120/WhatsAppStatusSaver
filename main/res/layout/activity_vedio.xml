@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vedio"
+    android:background="@drawable/w1">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/b"
+
+     >
+
+        <RelativeLayout
+            android:layout_width="250dp"
+            android:layout_height="350dp"
+            android:layout_centerHorizontal="true"
+android:layout_centerVertical="true"
+            android:background="@drawable/ed">
+
+            <VideoView
+                android:id="@+id/vedio"
+                android:layout_width="230dp"
+                android:layout_height="330dp"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/b"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        >
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:scaleType="centerInside"
+            android:src="@drawable/wj"
+            android:onClick="whatsapp"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:onClick="fb"
+            android:src="@drawable/fj"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:onClick="insta"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ij"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:onClick="save"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:src="@drawable/dj"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:onClick="others"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:src="@drawable/sj"/>
+
+    </LinearLayout>
+</RelativeLayout>
